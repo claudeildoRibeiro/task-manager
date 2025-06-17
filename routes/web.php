@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\AuthController;
 use App\Http\Controllers\HomeController;
 use Illuminate\Support\Facades\Route;
 
@@ -14,22 +15,24 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('admin.dashboard');
-})->middleware('verifica.usuario');
+
 
 
 Route::get('/', [HomeController::class, 'index'])
     ->name('home');
 
     // login routes
-Route::get('/login', [HomeController::class, 'login'])
+Route::get('/login', [AuthController::class, 'login'])
     ->name('login');
 
+    // postLogin route
+Route::post('/postLogin', [AuthController::class, 'postLogin'])
+    ->name('postLogin');
+
 // register routes
-Route::get('/register', [HomeController::class, 'register'])
+Route::get('/register', [AuthController::class, 'register'])
     ->name('register');
 
     //  postRegister route
-Route::post('/postRegister', [HomeController::class, 'postRegister'])
+Route::post('/postRegister', [AuthController::class, 'postRegister'])
     ->name('postRegister');

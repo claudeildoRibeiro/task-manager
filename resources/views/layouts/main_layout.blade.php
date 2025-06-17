@@ -41,19 +41,19 @@
   <header id="header" class="header d-flex align-items-center fixed-top">
     <div class="container-fluid container-xl position-relative d-flex align-items-center">
 
-      <a href="#" class="logo d-flex align-items-center me-auto">
+      <a href="{{ url('/') }}" class="logo d-flex align-items-center me-auto">
         <!-- Uncomment the line below if you also wish to use an image logo -->
          <img src="assets/img/logo7.png" alt="" >
         {{-- <h1 class="sitename">MyTask</h1> --}}
       </a>
 
       <nav id="navmenu" class="navmenu">
-        <ul>
-          {{-- <li><a href="#hero" class="active">Home</a></li>
+        {{-- <ul>
+           <li><a href="#hero" class="active">Home</a></li>
           <li><a href="#about">About</a></li>
           <li><a href="#services">Services</a></li>
           <li><a href="#portfolio">Portfolio</a></li>
-          <li><a href="#team">Team</a></li> --}}
+          <li><a href="#team">Team</a></li>
           <li class="dropdown"><a href="#"><span>Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
             <ul>
               <li><a href="#">Dropdown 1</a></li>
@@ -72,11 +72,13 @@
             </ul>
           </li>
           <li><a href="#contact">Contact</a></li>
-        </ul>
+        </ul> --}}
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
 
-      <a class="cta-btn" href="index.html#about">CRIE SUA CONTA</a>
+      <a class="cta-btn" href="{{ route('register') }}">CRIE SUA CONTA</a>
+        <a class="cta-btn" href="{{ route('login') }}">ENTRAR</a>
+
 
     </div>
   </header>
@@ -89,7 +91,7 @@
     <div class="container footer-top">
       <div class="row gy-4">
         <div class="col-lg-4 col-md-6 footer-about">
-          <a href="index.html" class="logo d-flex align-items-center">
+          <a href="{{ url('/') }}" class="logo d-flex align-items-center">
             <span class="sitename">Dewi</span>
           </a>
           <div class="footer-contact pt-3">
