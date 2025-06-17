@@ -14,5 +14,22 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+Route::get('/', function () {
+    return view('admin.dashboard');
+})->middleware('verifica.usuario');
+
+
 Route::get('/', [HomeController::class, 'index'])
     ->name('home');
+
+    // login routes
+Route::get('/login', [HomeController::class, 'login'])
+    ->name('login');
+
+// register routes
+Route::get('/register', [HomeController::class, 'register'])
+    ->name('register');
+
+    //  postRegister route
+Route::post('/postRegister', [HomeController::class, 'postRegister'])
+    ->name('postRegister');

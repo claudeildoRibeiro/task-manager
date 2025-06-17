@@ -15,4 +15,17 @@ class HomeController extends Controller
     {
         return view('partials.main');
     }
+
+    // load the login page
+    public function login()
+    {
+        return view('partials.login');
+
+    }
+
+    // load the register page
+    public function register()
+    {
+        return view('partials.register');
+    }
 }
