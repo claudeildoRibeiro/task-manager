@@ -14,22 +14,38 @@
           @csrf
           <div class="mb-3">
             <label for="email" class="form-label text-white">E-mail</label>
-            <input type="email" class="form-control rounded-3" id="email" name="email" required autofocus>
+            <input type="text" class="form-control rounded-3" id="email" name="email"  autofocus>
           </div>
+          @error('email')
+            <div class="alert alert-danger" role="alert">
+              <strong>{{ $message }}</strong>
+            </div>
+          @enderror
             <div class="mb-3">
                 <label for="name" class="form-label text-white">Nome</label>
-                <input type="text" class="form-control rounded-3" id="name" name="name" required>
+                <input type="text" class="form-control rounded-3" id="name" name="name" >
           </div>
+           @error('name')
+            <div class="alert alert-danger" role="alert">
+              <strong>{{ $message }}</strong>
+            </div>
+          @enderror
           <div class="mb-3">
             <label for="password" class="form-label text-white">Senha</label>
-            <input type="password" class="form-control rounded-3" id="password" name="password" required>
+            <input type="password" class="form-control rounded-3" id="password" name="password" >
           </div>
+           @error('password')
+            <div class="alert alert-danger" role="alert">
+              <strong>{{ $message }}</strong>
+            </div>
+          @enderror
 
-          <button type="submit" class="btn btn-get-started w-100 py-2">Registrar</button>
+          <button type="submit" class="btn btn-success w-100 py-2">Registrar</button>
         </form>
 
         <div class="mt-3 text-center">
           <p class="text-secondary">Já tem uma conta? <a href="{{ route('login') }}" class="text-white">Entrar</a></p>
+        </div>
       </div>
     </div>
   </section>

@@ -14,6 +14,12 @@
                         </a>
 
                         <p class="text-secondary">Bem-vindo de volta! Faça login para continuar.</p>
+                        {{-- verify if error --}}
+                        @if(@session('error'))
+                            <div class="alert alert-danger mt-3 text-center" role="alert">
+                                {{ session('error') }}
+                            </div>
+                        @endif
                     </div>
                     <form method="POST" action="{{ route('postLogin') }}">
                         @csrf
@@ -41,7 +47,9 @@
                             <input type="checkbox" class="form-check-input" id="remember" name="remember">
                             <label class="form-check-label text-secondary" for="remember">Lembrar-me</label>
                         </div>
-                        <button type="submit" class="btn btn-get-started w-100 py-2 bg-success text-white">Entrar</button>
+                        <button type="submit" class="btn btn-success w-100 py-2">Entrar</button>
+
+
                     </form>
                     <div class="mt-3 text-center">
                         <a href="#" class="text-secondary">Esqueceu a senha?</a>

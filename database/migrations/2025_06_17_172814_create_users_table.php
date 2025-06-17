@@ -12,9 +12,14 @@ return new class extends Migration
     public function up(): void
     {
         Schema::create('users', function (Blueprint $table) {
-            $table->id();
+            $table->id()->autoIncrement();
+            $table->string('name', 100);
+            $table->string('email', 100)->unique();
+            $table->string('password');
             $table->timestamps();
+            $table->softDeletes(); // This will add a deleted_at column for soft deletes
         });
+
     }
 
     /**
