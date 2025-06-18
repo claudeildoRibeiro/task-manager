@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # MyTasksLaravel
 
 Um sistema simples e eficiente para gerenciar tarefas do dia a dia, desenvolvido com Laravel.
@@ -32,3 +33,19 @@ MIT
 ---
 
 > Feito com ❤️ usando Laravel.
+=======
+> 🚧 **Este projeto está em desenvolvimento ativo!**
+>
+> Funcionalidades e estrutura podem mudar a qualquer momento. Não recomendamos o uso em produção neste momento.
+>
+> Contribuições, sugestões e feedbacks são bem-vindos!
+
+## Status do Projeto
+
+- Em desenvolvimento (versão alpha).
+
+
+## Como contribuir
+
+Abra uma issue ou envie um pull request! Dúvidas? Utilize a seção de discussions ou issues.
+>>>>>>> cf748f0e265cffb927a348a53b26dd802f783604
