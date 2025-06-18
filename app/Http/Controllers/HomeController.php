@@ -13,8 +13,16 @@ class HomeController extends Controller
      */
     public function index()
     {
-        return view('partials.main');
+
+        // Check if the user is authenticated
+        if (session()->has('user')) {
+            // redirect to the tasks page if the user is authenticated
+            return redirect()->route('tasks');
+        }
+
+        return view('main'); // Assuming you have a view named 'main'
+
     }
 
-    
+
 }

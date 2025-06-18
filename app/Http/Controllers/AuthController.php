@@ -39,8 +39,8 @@ class AuthController extends Controller
             // Store user information in the session
             session(['user' => $user]);
 
-            // Redirect to the home page with a success message
-            return redirect()->route('home')->with('success', 'Login realizado com sucesso');
+            // Redirect to the tasks page with a success message
+            return redirect()->route('tasks')->with('success', 'Login realizado com sucesso');
         } else {
             // Redirect back with an error message
             return redirect()->back()->with('error', 'Email ou senha incorretos');
@@ -95,6 +95,16 @@ class AuthController extends Controller
 
         // Redirect to the login page with a success message
         return redirect()->route('login')->with('success', 'Usuário cadastrado com sucesso');
+    }
+
+    // logout
+    public function logout()
+    {
+        // Clear the session
+        session()->forget('user');
+        session()->flush();
+        // Redirect to the login page with a success message
+        return redirect()->route('login')->with('success', 'Logout realizado com sucesso');
     }
 
 }

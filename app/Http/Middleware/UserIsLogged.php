@@ -15,8 +15,8 @@ class UserIsLogged
      */
     public function handle(Request $request, Closure $next): Response
     {
-        if(!$request->user()) {
-            return response()->json(['message' => 'Unauthorized'], 401);
+        if(!session()->has('user')) {
+            return redirect()->route('login');
         }
         return $next($request);
     }
