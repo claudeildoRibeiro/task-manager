@@ -20,27 +20,27 @@ Um sistema simples e eficiente para gerenciar tarefas do dia a dia, desenvolvido
 
 ## 📸 Screenshots
 
-![Tela de tarefas](
+Tela de tarefas(
     <p align="center">
-  <img src="docs/print1.png" width="600">
+  <img src="docs/print1.png" width="250">
 </p>
 )
 
-![Tela inicial](
+Tela inicial(
      <p align="center">
-  <img src="docs/print2.png" width="600">
+  <img src="docs/print2.png" width="250">
 </p>
 )
 
-![Tela de login](
+Tela de login(
      <p align="center">
-  <img src="docs/print3.png" width="600">
+  <img src="docs/print3.png" width="250">
 </p>
 )
 
-![Tela de registro](
+Tela de registro(
      <p align="center">
-  <img src="docs/print4.png" width="600">
+  <img src="docs/print4.png" width="250">
 </p>
 )
 
