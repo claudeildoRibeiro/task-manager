@@ -38,7 +38,20 @@
   ======================================================== -->
 </head>
 
-<body class="index-page">
+{{-- <style>
+    body {
+    background-image: url('assets/img/hero-bg5.png');
+    background-size: cover;      /* cobre toda a tela */
+    background-repeat: no-repeat;
+    background-attachment: fixed; /* mantém o fundo fixo ao rolar */
+    background-position: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+</style> --}}
+
+<body class="index-page" >
 
     <header id="header" class="header d-flex align-items-center fixed-top">
         <div class="container-fluid container-xl position-relative d-flex align-items-center">
@@ -90,8 +103,8 @@
                     <div class="social-links d-flex mt-4">
                         <a href=""><i class="bi bi-facebook"></i></a>
                         <a href=""><i class="bi bi-instagram"></i></a>
-                        <a href=""><i class="bi bi-linkedin"></i></a>
-                        <a href=""><i class="bi bi-github"></i></a>
+                        <a href="https://www.linkedin.com/in/claudeildo-ribeiro-6061a663/" target="_blank"><i class="bi bi-linkedin"></i></a>
+                        <a href="https://github.com/claudeildoRibeiro/task-manager" target="_blank"><i class="bi bi-github"></i></a>
                     </div>
                 </div>
 

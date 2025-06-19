@@ -104,7 +104,7 @@ class AuthController extends Controller
         session()->forget('user');
         session()->flush();
         // Redirect to the login page with a success message
-        return redirect()->route('login')->with('success', 'Logout realizado com sucesso');
+        return redirect()->route('home')->with('success', 'Logout realizado com sucesso');
     }
 
 }

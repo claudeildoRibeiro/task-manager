@@ -7,7 +7,7 @@
         <!-- Hero Section -->
         <section id="hero" class="hero section dark-background">
 
-            <img src="assets/img/hero-bg5.png" alt="" data-aos="fade-in">
+            <img src="assets/img/hero-bg5.png" alt="background" style="max-width: 100%; height: 100vh; display: block;">
 
             <div class="container d-flex flex-column align-items-center">
 
