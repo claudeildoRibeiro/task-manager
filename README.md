@@ -69,7 +69,3 @@ MIT
 - Em desenvolvimento (versão alpha).
 
 
-## Como contribuir
-
-Abra uma issue ou envie um pull request! Dúvidas? Utilize a seção de discussions ou issues.
->>>>>>> cf748f0e265cffb927a348a53b26dd802f783604
