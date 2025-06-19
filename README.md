@@ -20,13 +20,13 @@ Um sistema simples e eficiente para gerenciar tarefas do dia a dia, desenvolvido
 
 ## 📸 Screenshots
 
-![Tela de tarefas](public/assets/img/print1.png)
+![Tela de tarefas](docs/print1.png)
 
-![Tela inicial](public/assets/img/print2.png)
+![Tela inicial](docs/print2.png)
 
-![Tela de login](public/assets/img/print3.png)
+![Tela de login](docs/print3.png)
 
-![Tela de registro](public/assets/img/print4.png)
+![Tela de registro](docs/print4.png)
 
 ## 🤝 Contribuição
 
