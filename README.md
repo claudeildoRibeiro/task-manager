@@ -1,11 +1,13 @@
-<<<<<<< HEAD
+
 # MyTasksLaravel
 
 Um sistema simples e eficiente para gerenciar tarefas do dia a dia, desenvolvido com Laravel.
+Ótimo para quem está estudando PHP com Laravel, com abordagem nos principais tópicos como:
+Routes, view blade, migrations, autenticação.....
 
 ## ✨ Funcionalidades
 
-- Cadastro, edição e exclusão de tarefas
+- (CRUD) Cadastro, edição e exclusão de tarefas
 - Definição de prioridade e data de vencimento
 - Marcação de tarefas como concluídas
 - Interface intuitiva e responsiva
@@ -13,20 +15,20 @@ Um sistema simples e eficiente para gerenciar tarefas do dia a dia, desenvolvido
 ## 🚀 Como usar
 
 1. Clone o repositório
-2. Instale as dependências com `composer install`
-3. Configure o arquivo `.env`
+2. Crie um banco de dados mysql`
+3. Configure o arquivo `.env` com os dados do banco de dados
 4. Rode as migrations com `php artisan migrate`
 5. Inicie o servidor com `php artisan serve`
 
 ## 📸 Screenshots
 
-Tela de tarefas(
+Tela de tarefas, onde o usuário pode veficar as tarefas existentes e criar novas tarefas(
     <p align="center">
   <img src="docs/print1.png" width="250">
 </p>
 )
 
-Tela inicial(
+Tela de boas vindas(
      <p align="center">
   <img src="docs/print2.png" width="250">
 </p>
